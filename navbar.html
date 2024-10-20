@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body style="height:1500px">
+
+    <div class="container-fluid p-1 bg-success text-white text-center">
+	<!-- <h1> Educo </h1> -->
+  <h3>Educo Bangladesh</h3>
+  <p>It is a web based application</p>
+  <p><strong>People and Culture</strong></p>
+</div>
+
+<!-- <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+  <div class="container-fluid">
+  	<ul class="navbar-nav">
+        <li class="nav-item">
+        	<a class="navbar-brand" href="#">Home</a>
+        </li>
+        <li>
+        	<a class="navbar-brand" href="#">Add Profile</a>
+        </li>
+        <li>
+        	<a class="navbar-brand" href="#">Add Professional Profile</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Report</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="#">Professional Profile</a></li>
+            <li><a class="dropdown-item" href="#">Employee Status</a></li>
+          </ul>
+        </li>
+    </ul>
+  </div>
+</nav> -->
+
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" aria-label="Eighth navbar example">
+  <div class="container">
+    <a class="navbar-brand" href="#">People and Culture</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExample07">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Add Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Add Professional Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-bs-toggle="dropdown" aria-expanded="false">Report</a>
+          <ul class="dropdown-menu" aria-labelledby="dropdown07">
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="#">Professional Profile</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form>
+        <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+
+  <div class="container mt-3">
+    <h2>Inline Forms</h2>
+    <p>If you want your form elements to appear side by side, use .row and .col:</p>
+    <form>
+      <div class="row">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Enter email" name="email">
+        </div>
+        <div class="col">
+          <input type="password" class="form-control" placeholder="Enter password" name="pswd">
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <div class="container mt-3">
+    <h2>Floating Labels - Inputs</h2>
+    <p>Click inside the input field to see the floating label effect:</p>
+    <form action="/action_page.php">
+      <div class="form-floating mb-3 mt-3">
+        <input type="text" class="form-control" id="email" placeholder="Enter email" name="email" required>
+        <label for="email">Email</label>
+      </div>
+      <div class="form-floating mt-3 mb-3">
+        <input type="text" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+        <label for="pwd">Password</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+
+
+  <div class="container mt-3">
+    <h3>Form Validation</h3>
+    <p>Try to submit the form.</p>
+      
+    <form action="/action_page.php" class="was-validated">
+      <div class="mb-3 mt-3">
+        <label for="uname" class="form-label">Username:</label>
+        <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
+      </div>
+      <div class="mb-3">
+        <label for="pwd" class="form-label">Password:</label>
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+        <!-- <div class="valid-feedback">Valid.</div> -->
+        <div class="invalid-feedback">Please fill out this field.</div>
+      </div>
+      <div class="form-check mb-3">
+        <input class="form-check-input" type="checkbox" id="myCheck"  name="remember" required>
+        <label class="form-check-label" for="myCheck">I agree.</label>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Check this checkbox to continue.</div>
+      </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+
+
+  <div class="container mt-3">
+    <h2>Input Group Size</h2>
+    <p>Use the .input-group-sm class for small input groups and .input-group-lg for large inputs groups:</p>
+    
+    <div class="input-group input-group-sm mb-3">
+      <span class="input-group-text">Small</span>
+      <input type="text" class="form-control">
+    </div>
+    <div class="input-group mb-3">
+      <span class="input-group-text">Staff Name</span>
+      <input type="text" class="form-control">
+    </div>
+    <div class="input-group input-group-lg mb-3">
+      <span class="input-group-text">Large</span>
+      <input type="text" class="form-control">
+    </div>
+  </div>
+
+
+  <div class="container mt-3">
+  <form>
+    <div class="row">
+        <div class="col">
+        <div class="input-group mb-3">
+            <span class="input-group-text">Staff Name</span>
+            <input type="text" class="form-control">
+          </div>
+          </div>
+          <div class="col">
+            <div class="input-group mb-3">
+                <span class="input-group-text">Father's Name</span>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+            <div class="input-group mb-3">
+                <span class="input-group-text">Staff Name</span>
+                <input type="text" class="form-control">
+              </div>
+              </div>
+              <div class="col">
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Father's Name</span>
+                    <input type="text" class="form-control">
+                  </div>
+                </div>
+            </div>
+  </form>
+  </div>
+
+
+
+
+
+  <div class="container mt-3">
+    <form action="/#.php" class="was-validated"> 
+      <div class="row">
+        <div class="col">
+        <div class="input-group mb-3">
+            <span class="input-group-text">Staff Name / Employee Name</span>
+            <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+            <!-- <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please Please fill out this field.</div> -->
+          </div>
+          </div>
+          <div class="col">
+            <div class="input-group mb-3">
+                <span class="input-group-text">Father's Name</span>
+                <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+              </div>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+
+<!--This form can be used--------------------------------------------------------------------------------------------------------------->
+    <div class="container mt-3">
+      <h3>Form Validation in two column</h3>
+      <p>Try to submit the form.</p>
+        
+      <form action="/action_page.php" class="was-validated">
+
+        <div class="row">
+          <div class="col">
+          <!-- <div class="input-group mb-3"> -->
+          <div class="mb-3 mt-3">
+          <label for="uname" class="form-label">We can use Username:</label>
+          <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <!-- </div> -->
+        </div>
+
+        <div class="col">
+          <!-- <div class="input-group mb-3"> -->
+          <div class="mb-3 mt-3">
+          <label for="uname" class="form-label">We can use Father Name:</label>
+          <input type="text" class="form-control" id="uname" placeholder="Enter Father Name" name="uname" required>
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <!-- </div> -->
+        </div>
+
+
+        <div class="mb-3">
+          <label for="pwd" class="form-label">Password:</label>
+          <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+          <!-- <div class="valid-feedback">Valid.</div> -->
+          <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <div class="form-check mb-3">
+          <input class="form-check-input" type="checkbox" id="myCheck"  name="remember" required>
+          <label class="form-check-label" for="myCheck">I agree.</label>
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Check this checkbox to continue.</div>
+        </div>
+
+        </div>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+<!--End of the form design-->
+
+
+  <!-- <div class="container mt-3">
+    <h3>Form Validation in two column</h3>
+    <p>Try to submit the form.</p>
+      
+    <form action="/action_page.php" class="was-validated">
+      <div class="mb-3 mt-3">
+        <label for="uname" class="form-label">Username:</label>
+        <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
+      </div>
+      <div class="mb-3">
+        <label for="pwd" class="form-label">Password:</label>
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
+      </div>
+      <div class="form-check mb-3">
+        <input class="form-check-input" type="checkbox" id="myCheck"  name="remember" required>
+        <label class="form-check-label" for="myCheck">I agree.</label>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Check this checkbox to continue.</div>
+      </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div> -->
+
+
+
+
+  <div class="container mt-3">
+    <h2>Multiple Inputs and Helpers</h2>
+    <p>Add multiple inputs or addons:</p>
+    
+    <!-- Multiple inputs -->
+    <div class="input-group mb-3">
+      <span class="input-group-text">Person</span>
+      <input type="text" class="form-control" placeholder="First Name">
+      <input type="text" class="form-control" placeholder="Last Name">
+    </div>
+  
+    <!-- Multiple addons / help text -->
+    <div class="input-group mb-3">
+      <span class="input-group-text">One</span>
+      <span class="input-group-text">Two</span>
+      <span class="input-group-text">Three</span>
+      <input type="text" class="form-control">
+    </div>
+  </div>
+
+
+
+
+
+  <div class="container-fluid text-center"><br>
+    <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
+    <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
+    <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
+    <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
+  </div>
+
+
+
+
+  <p>Use <code class="highlighter-rouge">.table-responsive{-sm|-md|-lg|-xl}</code> as needed to create responsive tables up to a particular breakpoint. From that breakpoint and up, the table will behave normally and not scroll horizontally.</p>
+
+  <p><strong>These tables may appear broken until their responsive styles apply at specific viewport widths.</strong></p>
+  
+  <div class="bd-example">
+  <div class="table-responsive-sm">
+    <table class="table table-hover">
+      <thead>
+        <tr class="table-info">
+          <th scope="col">#</th>
+          <th scope="col">Heading</th>
+          <th scope="col">Heading</th>
+          <th scope="col">Heading</th>
+          <th scope="col">Heading</th>
+          <th scope="col">Heading</th>
+          <th scope="col">Heading</th>
+          <th scope="col">Heading</th>
+          <th scope="col">Heading</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Cell</td>
+          <td>Cell</td>
+          <td>Cell</td>
+          <td>Cell</td>
+          <td>Cell</td>
+          <td>Cell</td>
+          <td>Cell</td>
+          <td>Cell</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Cell</td>
+          <td>Cell</td>
+          <td>Cell</td>
+          <td>Cell</td>
+          <td>Cell</td>
+          <td>Cell</td>
+          <td>Cell</td>
+          <td>Cell</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Cell</td>
+          <td>Cell</td>
+          <td>Cell</td>
+          <td>Cell</td>
+          <td>Cell</td>
+          <td>Cell</td>
+          <td>Cell</td>
+          <td>Cell</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  </div>
+
+
+
+
+
+
+<br/>
+  <div class="bd-example">
+    <div class="table-responsive-sm">
+      <table class="table table-dark table-hover">
+        <thead>
+          <tr class="table-info">
+            <th scope="col">#</th>
+            <th scope="col">Heading</th>
+            <th scope="col">Heading</th>
+            <th scope="col">Heading</th>
+            <th scope="col">Heading</th>
+            <th scope="col">Heading</th>
+            <th scope="col">Heading</th>
+            <th scope="col">Heading</th>
+            <th scope="col">Heading</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    </div>
+  
+
+</body>
+</html>
